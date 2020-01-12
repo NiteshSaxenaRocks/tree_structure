@@ -1,0 +1,33 @@
+<!-- Standalone HTML with CSS and JS - movable to anywhere! -->
+<html>
+<head>
+<link  rel="stylesheet" href="style.css" /> 
+<!-- generated content -->
+  <!-- ordered with array (recommended) -->
+<script src="data.js"></script>
+<script src="main.js"></script>
+<!-- END: generated content -->
+	<title id="title">AST</title>	
+</head>
+
+<body onload="onLoad()">
+<div class="stripebox">
+	<div class="stripecontent">
+		<h1>AST View</h1>
+		<span>Click individual nodes or use arrow keys to navigate.</span>
+		<!-- do not use <button>s; ugly -->
+		<a class="control" id="expand" href="#" onClick="actExpandCollapse()" title="Enter or Space key">Expand All</a>
+		<a class="control" id="credit" href="#" onClick="displayCredit()">Credit</a>
+	</div>
+</div>
+
+<p id="filehead">
+	File: <span id="filename">source.demo</span>
+</p>
+<div id="tree">
+
+<ul id="section1" class="tree"></ul>
+<ul id="section2" class="tree"></ul>
+</div>
+</body>
+</html>
